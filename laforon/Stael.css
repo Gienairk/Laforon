@@ -1,0 +1,116 @@
+body{
+
+    background: url("bacground.png") ;
+}
+
+#bomb,#coin{
+    border: solid;
+    background: snow;
+}
+#insert{
+    display: none;
+    position:relative ;
+    text-align: center;
+}
+#name{
+    display: none;
+    z-index: 150;
+    position: relative;
+    top: 100px;
+    text-align: center;
+    z-index: 200;
+
+}
+#vvod{
+    position:relative ;
+    text-align: center;
+}
+#logo{
+
+position: relative;
+    top: 100px;
+    text-align: center;
+    z-index: 200;
+}
+#maze
+{
+
+    position: relative;
+    margin:auto;
+
+
+
+}
+.block
+{
+    float: left;
+    height: 20px;
+    width: 20px;
+    background-image: url("way.png");
+    z-index: 100;
+}
+.wall
+{
+    background-image: url("wall.png")}
+.me
+{
+    position: relative;
+}
+.me:after
+{
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    width: 10px;
+}
+.finish
+{
+    background-image: url("portal.jpg") ;
+}
+#complete
+{
+    display: none;
+ text-align: center;
+}
+
+#tabl{
+    position: absolute;
+    top:540px;
+    display: none;
+    text-align: center;
+   background-color: snow;
+         width: 400px;
+             border: solid black 2px;
+    border-collapse: collapse;
+    z-index: 1001;
+    left: 40%;right: 40% ;
+}
+td{
+    width: 100px;
+    border-bottom:dotted  1px black;
+}
+#move{ height: 20px;
+    width: 20px;
+    visibility: hidden;
+position:absolute;
+    top:0px;
+    left:0px;
+    z-index: 500;
+    background-image: url("start.jpg");
+    }
+.coin{
+     background-image: url("coin.jpg") ;
+}
+.boom{
+    animation-name: example;
+    animation-duration:1s;
+}
+
+@keyframes example {
+    0%   {background-image: url("boom1.png");}
+    25%  {background-image: url("boom2.png");}
+    50%  {background-image: url("boom3.png");}
+    100% {background-image: url("boom4.png");}
+}
+
+
